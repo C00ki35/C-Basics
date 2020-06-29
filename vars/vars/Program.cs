@@ -23,6 +23,14 @@ namespace vars
             Console.WriteLine(letter);
             Console.WriteLine(isWorking);
             Console.WriteLine(total);
+
+
+            //Conversion types
+
+            string numToString = "1234";
+            int i = Convert.ToInt32(numToString);
+
+
         }
     }
 }
