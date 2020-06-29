@@ -30,7 +30,19 @@ namespace vars
             string numToString = "1234";
             int i = Convert.ToInt32(numToString);
 
+            //Handling exceptions
 
+            try
+            {
+                var n = "1223";
+                byte b = Convert.ToByte(n);
+                Console.WriteLine(b);
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("The number could not be converted to a byte");
+            }
         }
     }
 }
