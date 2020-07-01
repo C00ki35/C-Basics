@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using vars.Math;
 
 namespace vars
 {
@@ -10,18 +11,15 @@ namespace vars
     {
         static void Main(string[] args)
         {
-            //operators
+            var Ken = new Person();
+            Ken.FirstName = "Ken";
+            Ken.LastName = "Simms";
+            Ken.Introduce();
 
-            var a = 10;
-            var b = 20;
-            var c = 4;
-
-            Console.WriteLine((float)a/(float)b);
-            Console.WriteLine((a * b) + c);
-            Console.WriteLine(a > b);
-            Console.WriteLine(a != c);
-            Console.WriteLine(c < b && c < a);
-
+            Calculator calculator = new Calculator();
+            var result = calculator.Add(1, 8);
+            Console.WriteLine(result);
+           
 
         }
     }
